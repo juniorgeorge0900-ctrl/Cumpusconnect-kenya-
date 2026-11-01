@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CampusConnect Kenya | Scholarships, Jobs, Internships and Campus Updates</title>
+<meta name="description" content="Find scholarships, bursaries, verified online jobs, internships, industrial attachments and university announcements for students across Kenya.">
+<meta name="theme-color" content="#0b1f4b">
+<meta property="og:title" content="CampusConnect Kenya">
+<meta property="og:description" content="Scholarships, jobs, internships and campus updates for Kenyan students.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230b1f4b'/%3E%3Ctext x='50' y='68' font-size='56' text-anchor='middle' fill='%23c9a227' font-family='Georgia'%3EC%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"CampusConnect Kenya","description":"Opportunities and updates for students in Kenya"}</script>
+<style>
+:root{--navy:#0b1f4b;--navy2:#16336f;--gold:#c9a227;--gold-d:#7a5f00;--bg:#f4f6fb;--ink:#14213d;--mute:#4a5670;--line:#d9deea;--white:#fff;--r:10px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;margin:0}
+a{color:var(--navy2)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+.skip{position:absolute;left:-999px;background:var(--gold);color:var(--navy);padding:8px 14px;z-index:20}
+.skip:focus{left:8px;top:8px}
+header{background:var(--navy);position:sticky;top:0;z-index:10;border-bottom:3px solid var(--gold)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:58px;flex-wrap:wrap}
+.logo{color:var(--white);font:700 1.2rem Georgia,serif;text-decoration:none}
+.logo b{color:var(--gold)}
+nav a{color:#dfe6f7;text-decoration:none;margin-left:16px;font-size:.95rem;padding:6px 0;display:inline-block}
+nav a:hover{color:var(--gold)}
+.hero{background:var(--navy);color:var(--white);padding:44px 0 52px}
+.hero h1{font-size:clamp(1.9rem,6vw,3.1rem);max-width:15em}
+.hero p{color:#cdd7ef;max-width:34em;margin:14px 0 24px}
+.search{display:flex;gap:8px;max-width:620px;flex-wrap:wrap}
+.search input{flex:1 1 240px;padding:14px 16px;font-size:1rem;border:2px solid transparent;border-radius:var(--r)}
+.btn{background:var(--gold);color:var(--navy);border:0;border-radius:var(--r);padding:14px 22px;font:700 1rem system-ui;cursor:pointer;text-decoration:none;display:inline-block}
+.btn:hover{background:#dcb73a}
+.stats{display:flex;gap:26px;margin-top:26px;color:#cdd7ef;font-size:.92rem;flex-wrap:wrap}
+.stats strong{color:var(--gold);font-size:1.25rem;display:block;font-family:Georgia,serif}
+section{padding:40px 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.head h2{font-size:1.6rem;color:var(--navy)}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 10px;-webkit-overflow-scrolling:touch}
+.chip{flex:none;border:1.5px solid var(--navy);background:var(--white);color:var(--navy);border-radius:99px;padding:8px 16px;font:600 .92rem system-ui;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--navy);color:var(--white);border-color:var(--navy)}
+.tools{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:6px 0 14px;flex-wrap:wrap;color:var(--mute);font-size:.95rem}
+select{padding:8px 10px;border-radius:8px;border:1.5px solid var(--line);font:inherit;background:var(--white)}
+.grid{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:700px){.grid{grid-template-columns:1fr 1fr}}
+@media(min-width:980px){.grid{grid-template-columns:1fr 1fr 1fr}}
+.card{background:var(--white);border:1px solid var(--line);border-left:5px solid var(--navy);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:8px}
+.card.scholarship{border-left-color:var(--gold)}
+.card h3{font-size:1.08rem;color:var(--navy)}
+.meta{font-size:.85rem;color:var(--mute)}
+.card p{margin:0;font-size:.95rem;color:var(--ink);flex:1}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{font-size:.78rem;font-weight:600;padding:2px 9px;border-radius:99px;background:#e8ecf7;color:var(--navy)}
+.tag.v{background:#fff4cc;color:var(--gold-d)}
+.tag.soon{background:#ffe3e0;color:#9b1c10}
+.card a.go{font-weight:700;text-decoration:none;color:var(--navy2)}
+.card a.go:hover{text-decoration:underline}
+.empty{background:var(--white);border:1px dashed var(--navy);border-radius:var(--r);padding:26px;text-align:center}
+.band{background:var(--navy);color:var(--white)}
+.band h2{color:var(--white)}
+.steps{display:grid;gap:14px;grid-template-columns:1fr;margin-top:16px}
+@media(min-width:700px){.steps{grid-template-columns:repeat(3,1fr)}}
+.steps div{background:var(--navy2);border-radius:var(--r);padding:16px;border-top:3px solid var(--gold)}
+.steps h3{font-size:1.05rem;color:var(--gold);margin-bottom:6px}
+.steps p{margin:0;color:#dfe6f7;font-size:.95rem}
+footer{background:#07142f;color:#b9c4de;padding:28px 0;font-size:.9rem}
+footer a{color:var(--gold)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#opportunities">Skip to listings</a>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">Campus<b>Connect</b> Kenya</a>
+    <nav aria-label="Main">
+      <a href="#opportunities">Listings</a>
+      <a href="#how">How it works</a>
+      <a href="#submit">Submit</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <h1>Your next scholarship, job or attachment starts here.</h1>
+      <p>Opportunities and campus updates for university and college students across Kenya, checked before they are posted.</p>
+      <form class="search" role="search" id="searchForm">
+        <label for="q" class="skip" style="position:absolute">Search listings</label>
+        <input id="q" type="search" placeholder="Try: bursary, remote, accounting" autocomplete="off">
+        <button class="btn" type="submit">Search</button>
+      </form>
+      <div class="stats" id="stats"></div>
+    </div>
+  </div>
+
+  <section id="opportunities" aria-labelledby="listTitle">
+    <div class="wrap">
+      <div class="head"><h2 id="listTitle">Latest listings</h2></div>
+      <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+      <div class="tools">
+        <span id="count" aria-live="polite"></span>
+        <label>Sort by
+          <select id="sort">
+            <option value="new">Newest first</option>
+            <option value="soon">Closing soonest</option>
+          </select>
+        </label>
+      </div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <section class="band" id="how" aria-labelledby="howTitle">
+    <div class="wrap">
+      <h2 id="howTitle">How it works</h2>
+      <div class="steps">
+        <div><h3>Find</h3><p>Search or filter by scholarships, jobs, internships, announcements and guides.</p></div>
+        <div><h3>Check</h3><p>Look for the gold Verified tag. Never pay money to apply for anything.</p></div>
+        <div><h3>Apply</h3><p>Open the official link and apply before the deadline shown on the card.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="submit" aria-labelledby="subTitle">
+    <div class="wrap">
+      <h2 id="subTitle" style="color:var(--navy)">Know an opportunity?</h2>
+      <p>Send us the official link, the deadline and who can apply. We check each one before it goes live.</p>
+      <a class="btn" id="mail" href="#">Email a listing</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong style="color:#fff">CampusConnect Kenya</strong> helps students find opportunities. Always confirm details on the official source before you apply.</p>
+    <p>Contact: <a href="mailto:juniorgeorge0900@gmail.com">juniorgeorge0900@gmail.com</a> &bull; <a href="tel:+254757966372">0757 966 372</a> &bull; <a href="https://wa.me/254757966372" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
+    <p><a href="about.html">About us</a> &bull; <a href="privacy.html">Privacy and disclaimer</a></p>
+    <p id="updated"></p>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script>
+(function () {
+  var CATS = [
+    ["all", "All"], ["scholarship", "Scholarships"], ["job", "Jobs"],
+    ["internship", "Internships"], ["announcement", "Announcements"], ["resource", "Resources and news"]
+  ];
+  var LABEL = { scholarship: "Scholarship", job: "Job", internship: "Internship", announcement: "Announcement", resource: "Resource" };
+  var state = { cat: "all", q: "", sort: "new" };
+  var grid = document.getElementById("grid");
+  var today = new Date(); today.setHours(0, 0, 0, 0);
+
+  function daysLeft(d) {
+    if (!d) return null;
+    return Math.ceil((new Date(d + "T00:00:00") - today) / 864e5);
+  }
+  function fmt(d) {
+    return new Date(d + "T00:00:00").toLocaleDateString("en-KE", { day: "numeric", month: "short", year: "numeric" });
+  }
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text) e.textContent = text;
+    return e;
+  }
+  function card(it) {
+    var c = el("article", "card " + it.type);
+    var tags = el("div", "tags");
+    tags.appendChild(el("span", "tag", LABEL[it.type] || it.type));
+    if (it.verified) tags.appendChild(el("span", "tag v", "Verified"));
+    var left = daysLeft(it.deadline);
+    if (left !== null && left >= 0 && left <= 14) tags.appendChild(el("span", "tag soon", left === 0 ? "Closes today" : "Closes in " + left + " days"));
+    c.appendChild(tags);
+    c.appendChild(el("h3", "", it.title));
+    c.appendChild(el("div", "meta", it.org + " \u2022 " + it.location));
+    c.appendChild(el("p", "", it.summary));
+    if (it.deadline) c.appendChild(el("div", "meta", (left < 0 ? "Closed " : "Deadline: ") + fmt(it.deadline)));
+    var a = el("a", "go", "View details");
+    a.href = it.link; a.target = "_blank"; a.rel = "noopener noreferrer";
+    a.setAttribute("aria-label", "View details: " + it.title);
+    c.appendChild(a);
+    return c;
+  }
+  function render() {
+    var q = state.q.toLowerCase().trim();
+    var list = ITEMS.filter(function (it) {
+      var open = !it.deadline || daysLeft(it.deadline) >= 0;
+      var hay = (it.title + " " + it.org + " " + it.summary + " " + it.location + " " + it.type).toLowerCase();
+      return open && (state.cat === "all" || it.type === state.cat) && (!q || hay.indexOf(q) > -1);
+    });
+    list.sort(function (a, b) {
+      if (state.sort === "soon") {
+        var x = a.deadline || "9999", y = b.deadline || "9999";
+        return x < y ? -1 : x > y ? 1 : 0;
+      }
+      return a.posted < b.posted ? 1 : -1;
+    });
+    grid.textContent = "";
+    list.forEach(function (it) { grid.appendChild(card(it)); });
+    if (!list.length) {
+      var e = el("div", "empty", "No listings match. Try a different word or choose All.");
+      e.style.gridColumn = "1/-1";
+      grid.appendChild(e);
+    }
+    document.getElementById("count").textContent = list.length + (list.length === 1 ? " listing" : " listings");
+  }
+
+  var chips = document.getElementById("chips");
+  CATS.forEach(function (c) {
+    var b = el("button", "chip", c[1]);
+    b.type = "button";
+    b.setAttribute("aria-pressed", c[0] === "all");
+    b.onclick = function () {
+      state.cat = c[0];
+      Array.prototype.forEach.call(chips.children, function (x) { x.setAttribute("aria-pressed", x === b); });
+      render();
+    };
+    chips.appendChild(b);
+  });
+
+  var q = document.getElementById("q");
+  q.addEventListener("input", function () { state.q = q.value; render(); });
+  document.getElementById("searchForm").addEventListener("submit", function (e) {
+    e.preventDefault(); state.q = q.value; render();
+    document.getElementById("opportunities").scrollIntoView();
+  });
+  document.getElementById("sort").addEventListener("change", function (e) { state.sort = e.target.value; render(); });
+
+  var openItems = ITEMS.filter(function (i) { return !i.deadline || daysLeft(i.deadline) >= 0; });
+  function n(t) { return openItems.filter(function (i) { return i.type === t; }).length; }
+  document.getElementById("stats").innerHTML =
+    "<span><strong>" + n("scholarship") + "</strong>Scholarships</span>" +
+    "<span><strong>" + n("job") + "</strong>Jobs</span>" +
+    "<span><strong>" + n("internship") + "</strong>Internships</span>";
+  document.getElementById("mail").href = "mailto:" + SITE.email + "?subject=" + encodeURIComponent("New listing for CampusConnect Kenya");
+  document.getElementById("updated").textContent = "Last updated " + fmt(SITE.updated) + ".";
+  render();
+})();
+</script>
+</body>
+</html>
